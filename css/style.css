@@ -253,7 +253,7 @@ body {
 .advantages {
     background: #CAEAC7;
     transform: skewY(-9.5deg);
-    margin: -121px 0 0 0;
+    margin: -165px 0 0 0;
 }
 
 .advantages__wrapper {
@@ -589,7 +589,7 @@ body {
     }
 
     .header__inner {
-        padding: 0 16px 0 0;
+        padding: 0 10px 0 0;
     }
 
     .main-screen__inner {
@@ -797,7 +797,7 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 16px;
-        padding: 127px 0 0 0;
+        padding: 176px 0 0 0;
     }
 
     .advantages__textbox {
