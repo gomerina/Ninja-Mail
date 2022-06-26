@@ -73,6 +73,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* ==================== */
 .header {
     padding: 21px 0 27px 0;
 }
@@ -84,8 +85,14 @@ body {
 .header__inner {
     max-width: 1294px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 27px 0 0;
 }
@@ -196,7 +203,11 @@ body {
 }
 
 .btns__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -244,6 +255,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     width: 100%;
@@ -252,11 +265,15 @@ body {
 
 .advantages {
     background: #CAEAC7;
+    -webkit-transform: skewY(-9.5deg);
+    -ms-transform: skewY(-9.5deg);
     transform: skewY(-9.5deg);
     margin: -165px 0 0 0;
 }
 
 .advantages__wrapper {
+    -webkit-transform: skewY(9.5deg);
+    -ms-transform: skewY(9.5deg);
     transform: skewY(9.5deg);
     padding: 0 10px 87px 10px;
     background: url(../img/adv-bg.png) no-repeat top 48px right;
@@ -267,7 +284,9 @@ body {
     padding: 266px 0 0 0;
     max-width: 1086px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 320px 47px 320px 47px 365px;
     grid-template-columns: 320px 320px 365px;
     gap: 47px;
 }
@@ -324,8 +343,10 @@ body {
     max-width: 1119px;
     padding: 0 10px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
     gap: 34px;
+    -ms-grid-columns: 1fr 34px 1fr 34px 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -387,14 +408,20 @@ body {
 }
 
 .email-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 668px;
     margin: 0 auto;
 }
 
 .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     width: 100%;
 }
@@ -438,9 +465,16 @@ body {
 }
 
 .brands__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 64px;
 }
@@ -489,19 +523,28 @@ body {
 }
 
 .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 4px 74px 74px 0;
     border-bottom: 2px solid #DBDBDB;
 }
 
 .footer__nav-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 62px;
 }
 
 .footer__nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 62px;
 }
@@ -526,8 +569,13 @@ body {
 
 .copy {
     padding: 39px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 15px;
     font-weight: 700;
@@ -548,6 +596,7 @@ body {
 
 @media screen and (max-width: 1170px) {
     .advantages__inner {
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -748,6 +797,8 @@ body {
 
     .footer__nav-item,
     .footer__nav-box {
+        -webkit-column-gap: 39px;
+        -moz-column-gap: 39px;
         column-gap: 39px;
         row-gap: 0;
         height: 100%;
@@ -793,8 +844,13 @@ body {
     }
 
     .advantages__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         gap: 16px;
         padding: 176px 0 0 0;
@@ -810,11 +866,15 @@ body {
     }
 
     .members__inner {
+        -ms-grid-columns: 2fr 19px 2fr;
         grid-template-columns: 2fr 2fr;
         gap: 19px;
     }
 
     .footer__menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -827,7 +887,12 @@ body {
     }
 
     .copy {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -875,7 +940,10 @@ body {
     .main-title {
         font-size: 36px;
         margin: -34px 0 98px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -932,11 +1000,15 @@ body {
     }
 
     .advantages {
+        -webkit-transform: skewY(-21.5deg);
+        -ms-transform: skewY(-21.5deg);
         transform: skewY(-21.5deg);
         margin: -34px 0 0 0;
     }
 
     .advantages__wrapper {
+        -webkit-transform: skewY(21.5deg);
+        -ms-transform: skewY(21.5deg);
         transform: skewY(21.5deg);
     }
 
@@ -954,12 +1026,16 @@ body {
     }
 
     .members__inner {
+        -ms-grid-columns: 4fr;
         grid-template-columns: 4fr;
         padding: 0 49px;
         gap: 23px;
     }
 
     .form-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1006,7 +1082,11 @@ body {
 
     .brands__box {
         row-gap: 24px;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
         column-gap: 40px;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -1015,6 +1095,4 @@ body {
         left: 25px;
         top: 5px;
     }
-
-
 }
